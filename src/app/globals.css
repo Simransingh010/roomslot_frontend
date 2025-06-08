@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+nav {
+  /* Dark theme: deep blue/gray gradient for nav background */
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  color: #f1f5f9;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px 0 rgba(15, 23, 42, 0.18);
+  transition: background 0.3s;
+}
+
+@media (prefers-color-scheme: light) {
+  nav {
+    background: linear-gradient(90deg, #2563eb 0%, #38bdf8 50%, #0ea5e9 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(30, 64, 175, 0.08);
+  }
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
